@@ -5,56 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Titulo Hotel</title>
+
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Inter+Tight:wght@100;400;800&family=Kanit:ital@1&family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
     
     <!-- CREACION DE NAV -->
     <header>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#habitaciones">Habitaciones</a>
-            <a href="#galeria">Galería</a>
-            <a href="#reserva">Reservar</a>
-            <a href="#ubicacion">Ubicación</a>
-            <a href="#otros">Consultas</a>
-        </nav>
+        <div class="container">
+            <nav>
+                <p id="parrafoLogo">NombreHotel</p>
+                <a href="#inicio">Inicio</a>
+                <a href="#habitaciones">Habitaciones</a>
+                <a href="#galeria">Galería</a>
+                <a href="#reserva">Reservar</a>
+                <a href="#ubicacion">Ubicación</a>
+                <a href="#otros">Consultas</a>
+            </nav>
+        </div>
     </header>
 
     <!-- CONTENIDO PRINCIPAL DE LA WEB CON SUS SECCIONES -->
     <article>
         <section id="inicio">
-            <div class="container">
-
-            </div>
+                <h1>Nombre Hotel</h1>
+                <a class="aBtnPrueba" href="https://www.google.com/search?client=firefox-b-d&q=comentarios+en+css+visual+studio+code" target="_blank">¡RESERVAR!</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos doloribus aspernatur hic perferendis amet optio distinctio ipsum sapiente quo id voluptate, suscipit possimus dicta molestiae debitis impedit neque eligendi a.</p>
         </section>
 
         <section id="habitaciones">
             <div class="container">
+                <h2>Habitaciones</h2>
+                <h3 class="subtituloSeccion">Habitación 1</h3>
+                <img src="" alt="Habitación 1">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab rerum eum sit! Dolores possimus facilis facere architecto, nisi vero illo recusandae. Repudiandae doloribus necessitatibus eius, laborum quisquam fugit et officiis?</p>
+                <button class="btnConsulta">Consultar</button>
 
+                <h3 class="subtituloSeccion">Habitación 2</h3>
+                <img src="" alt="Habitación 2">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab rerum eum sit! Dolores possimus facilis facere architecto, nisi vero illo recusandae. Repudiandae doloribus necessitatibus eius, laborum quisquam fugit et officiis?</p>
+                <button class="btnConsulta">Consultar</button>
+
+                <h3 class="subtituloSeccion">Habitación 3</h3>
+                <img src="" alt="Habitación 3">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab rerum eum sit! Dolores possimus facilis facere architecto, nisi vero illo recusandae. Repudiandae doloribus necessitatibus eius, laborum quisquam fugit et officiis?</p>
+                <button class="btnConsulta">Consultar</button>
             </div>
         </section>
 
         <section id="galeria">
             <div class="container">
-
+                <h2>Galería de Imágenes</h2>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
             </div>
         </section>
 
         <section id="reserva">
             <div class="container">
-
+                <h2>Reservar</h2>
+                <h3 class="subtituloSeccion">Completa el Formulario</h3>
+                <form action="">
+                    <label for="">Nombre</label>
+                    <input type="text"><br>
+                    <label for="">Apellido</label>
+                    <input type="text"><br>
+                    <label for="">Email</label>
+                    <input type="email"><br>
+                    <button type="submit">Reservar</button>
+                    <a class="aBtnPrueba" href="https://www.google.com/search?client=firefox-b-d&q=comentarios+en+css+visual+studio+code" target="_blank">¡RESERVAR!</a>
+                </form>
             </div>
         </section>
 
         <section id="ubicacion">
             <div class="container">
-
+                <h2>Ubicación</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3629.181368830522!2d-81.81073588250946!3d24.548393820626398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d1b6e5d0f9f8c5%3A0xa914f202c6a59edc!2sCayo%20Hueso%2C%20Florida%2033040%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1664331618786!5m2!1ses!2sar" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>           
         </section>
 
         <section id="otros">
             <div class="container">
-
+                <h2>Otros</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam hic ex autem, repudiandae beatae unde ipsa deleniti quas explicabo ipsam nobis maiores aut ratione debitis temporibus labore excepturi, illo quisquam.</p>
             </div>
         </section>
     </article>
@@ -62,7 +107,7 @@
     <!-- FOOTER -->
     <footer>
         <div class="container">
-
+            <p>Desarrollado por Lucas Gaston - 2022</p>
         </div> 
     </footer>
 

@@ -1,0 +1,103 @@
+* {
+    /* para que mis margin no vayan
+    mas alla de lo que seteo */
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    margin: 0;
+    background-color: #f3efef;
+}
+
+header {
+    background-color: black;
+}
+
+header #parrafoLogo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #cac2c2;
+    font-size: 24px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 15px;
+}
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header a {
+    color: #818181;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #3483fa;
+}
+
+article {
+    background-color: #f8f8f8;
+    margin: 2% 4% 2% 4%;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3.subtituloSeccion {
+    font-size: 20px;
+}
+
+p {
+    color: #665;
+}
+
+.aBtnPrueba {
+    text-decoration: none;
+    background-color: #3483fa;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.aBtnPrueba:hover {
+    background:  #2968c8;
+    padding-right: auto;
+    padding-left: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer { 
+    background-color: black;
+    color: #818181;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
+
+footer p:hover {
+    color: #3483fa;
+}
