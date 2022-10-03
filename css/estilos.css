@@ -163,9 +163,11 @@ form {
     padding: 2%;
     max-width: 384px;
     max-height: 654px;
-
-    margin: 0;
+    background-color: #f3efef;
+    
+    
 }
+
 label{
     display: inline-block;
     width: 80px;
@@ -251,7 +253,12 @@ footer p:hover {
         background-position: center center;
     }
 
-
+    form {
+        margin-left: 30%;
+        margin-right: 25%;
+        max-width: 500px;
+        justify-content: center;
+    } 
     /*UBICACION*/
     #ubicacion .container {
         display: flex;
