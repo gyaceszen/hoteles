@@ -20,8 +20,8 @@
     <!-- CREACION DE NAV -->
     <header>
         <div class="container">
+            <p id="parrafoLogo">NombreHotel</p>
             <nav>
-                <p id="parrafoLogo">NombreHotel</p>
                 <a href="#inicio">Inicio</a>
                 <a href="#habitaciones">Habitaciones</a>
                 <a href="#galeria">Galería</a>
@@ -34,30 +34,41 @@
 
     <!-- CONTENIDO PRINCIPAL DE LA WEB CON SUS SECCIONES -->
     <article>
-        <section id="inicio">
-                <h1>Nombre Hotel</h1>
-                <a class="aBtnPrueba" href="https://www.google.com/search?client=firefox-b-d&q=comentarios+en+css+visual+studio+code" target="_blank">¡RESERVAR!</a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos doloribus aspernatur hic perferendis amet optio distinctio ipsum sapiente quo id voluptate, suscipit possimus dicta molestiae debitis impedit neque eligendi a.</p>
-        </section>
+
+        <div class="banner">
+            <h1>Nombre Hotel</h1>
+            <a class="aBtnPrueba" href="https://www.google.com/search?client=firefox-b-d&q=comentarios+en+css+visual+studio+code" target="_blank">¡RESERVAR!</a>
+        </div>
 
         <section id="habitaciones">
+            <h2>Habitaciones</h2>
+
+            <h3 class="subtituloSeccion">Habitación 1</h3>
             <div class="container">
-                <h2>Habitaciones</h2>
-                <h3 class="subtituloSeccion">Habitación 1</h3>
-                <img src="" alt="Habitación 1">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab rerum eum sit! Dolores possimus facilis facere architecto, nisi vero illo recusandae. Repudiandae doloribus necessitatibus eius, laborum quisquam fugit et officiis?</p>
-                <button class="btnConsulta">Consultar</button>
-
-                <h3 class="subtituloSeccion">Habitación 2</h3>
-                <img src="" alt="Habitación 2">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab rerum eum sit! Dolores possimus facilis facere architecto, nisi vero illo recusandae. Repudiandae doloribus necessitatibus eius, laborum quisquam fugit et officiis?</p>
-                <button class="btnConsulta">Consultar</button>
-
-                <h3 class="subtituloSeccion">Habitación 3</h3>
-                <img src="" alt="Habitación 3">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab rerum eum sit! Dolores possimus facilis facere architecto, nisi vero illo recusandae. Repudiandae doloribus necessitatibus eius, laborum quisquam fugit et officiis?</p>
-                <button class="btnConsulta">Consultar</button>
+                <div class="imgHabitaciones">
+                    <img src="img/hotelHabitaciones.jpg" alt="Habitación 1">
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab rerum eum sit! Dolores possimus facilis facere architecto, nisi vero illo recusandae. Repudiandae doloribus necessitatibus eius, laborum quisquam fugit et officiis?<br><br> <a class="aBtnInfo" href="#" target="_blank">Más Info</a></p>
             </div>
+
+
+            <h3 class="subtituloSeccion">Habitación 2</h3>
+            <div class="container">
+                <div class="imgHabitaciones">
+                    <img src="img/hotelHabitaciones.jpg" alt="Habitación 2">
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab rerum eum sit! Dolores possimus facilis facere architecto, nisi vero illo recusandae. Repudiandae doloribus necessitatibus eius, laborum quisquam fugit et officiis? <br><br> <a class="aBtnInfo" href="#" target="_blank">Más Info</a></p>
+                
+            </div>
+
+            <h3 class="subtituloSeccion">Habitación 3</h3>
+            <div class="container">
+                <div class="imgHabitaciones">
+                    <img src="img/hotelHabitaciones.jpg" alt="Habitación 3">
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab rerum eum sit! Dolores possimus facilis facere architecto, nisi vero illo recusandae. Repudiandae doloribus necessitatibus eius, laborum quisquam fugit et officiis? <br><br> <a class="aBtnInfo" href="#" target="_blank">Más Info</a> </p>
+            </div>
+
         </section>
 
         <section id="galeria">
@@ -77,22 +88,51 @@
                 <h2>Reservar</h2>
                 <h3 class="subtituloSeccion">Completa el Formulario</h3>
                 <form action="">
-                    <label for="">Nombre</label>
-                    <input type="text"><br>
-                    <label for="">Apellido</label>
-                    <input type="text"><br>
-                    <label for="">Email</label>
-                    <input type="email"><br>
-                    <button type="submit">Reservar</button>
-                    <a class="aBtnPrueba" href="https://www.google.com/search?client=firefox-b-d&q=comentarios+en+css+visual+studio+code" target="_blank">¡RESERVAR!</a>
+                    <label for="inombre">Nombre</label>
+                    <input id="inombre" type="text"><br>
+                    <label for="iapellido">Apellido</label>
+                    <input id="iapellido" type="text"><br>
+                    <label for="iemail">Email</label>
+                    <input id="iemail" type="email">                    
+                    <p>Ingrese fecha de entrada y salida</p>
+                    <label for="ientrada">Entrada</label>
+                    <input type="date"><br>
+                    <label for="ientrada">Salida</label>
+                    <input type="date"><br>
+                    <p>Seleccione tipo de habitación</p>
+                    <input type="radio" value="Habitación 1" name="habitacion">
+                    <label for="habitacion">Hab. 1</label>
+                    <input type="radio" value="Habitacion 2" name="habitacion">
+                    <label for="habitacion">Hab. 2</label>
+                    <input type="radio" value="Habitacion 3" name="habitacion">
+                    <label for="habitacion">Hab. 3</label><br><br>
+                    <p>Seleccione cantidad de personas</p>
+                    <input type="radio" value="persona 2" name="cantPersonas">
+                    <label for="cantPersonas">2 Pers.</label>
+                    <input type="radio" value="persona 3" name="cantPersonas">
+                    <label for="cantPersonas">3 Pers.</label>
+                    <input type="radio" value="persona 4" name="cantPersonas">
+                    <label for="cantPersonas">4 Pers.</label><br><br>
+                    <input id="reservar" type="submit" value="Reservar">
                 </form>
             </div>
         </section>
 
         <section id="ubicacion">
+            <h2>Ubicación</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel laudantium dicta eum et facere nemo, odio molestias non exercitationem dignissimos quam aliquid. Unde, eum obcaecati quae saepe aut sequi provident?</p>
             <div class="container">
-                <h2>Ubicación</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3629.181368830522!2d-81.81073588250946!3d24.548393820626398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d1b6e5d0f9f8c5%3A0xa914f202c6a59edc!2sCayo%20Hueso%2C%20Florida%2033040%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1664331618786!5m2!1ses!2sar" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="googleMaps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17085.60046132988!2d-80.16465975867659!3d25.81000995010385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9a6172bfeddb9%3A0x37be1741259463eb!2sMiami%20Beach%2C%20Florida%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1664590113739!5m2!1ses!2sar" width="385" height="300" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <ul>
+                    <li><strong>Calle Principal 1234</strong></li>
+                    <li>Miami, Florida, USA.</li>
+                    <li>Teléfono (222) 1234567</li>
+                    <li><a href="#" target="_blank"> - Twitter</a></li>
+                    <li><a href="#" target="_blank"> - Instagram</a></li>
+                </ul>
             </div>           
         </section>
 
